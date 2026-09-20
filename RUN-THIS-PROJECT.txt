@@ -1,0 +1,18 @@
+OSCode CIT — Red/White 3D UI Update
+
+1. Open THIS folder in VS Code. It is the folder that directly contains package.json.
+2. In PowerShell:
+   npm install
+   npm run dev
+
+3. The project includes the hero background video at:
+   public/videos/hero-background.MP4
+
+Main UI updates:
+- black/graphite background with subtle red technical grid
+- red + white visual language
+- larger rounded navbar with red active/hover states
+- thin red circular brightness/theme control
+- 3D hover motion and click-to-flip cards
+- red rotating/animated icons
+- project, event, achievement, team and hackathon cards reveal details on the back
