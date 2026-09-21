@@ -524,3 +524,1492 @@ body::after { content:""; position:fixed; inset:0; pointer-events:none; z-index:
 .home-frame-link a:hover { background:#ff3542; color:#fff; }
 @media (max-width:900px){.home-stat-strip{grid-template-columns:repeat(2,1fr)}.home-stat:nth-child(2){border-right:0}.home-stat:nth-child(-n+2){border-bottom:1px solid rgba(255,255,255,.07)}}
 @media (max-width:560px){.home-stat-strip{grid-template-columns:1fr}.home-stat{border-right:0!important;border-bottom:1px solid rgba(255,255,255,.07)}.home-stat:last-child{border-bottom:0}}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
+
+/* =========================================================
+   RESET
+========================================================= */
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #030711;
+  color: #ffffff;
+  font-family: "Inter", sans-serif;
+  overflow-x: hidden;
+}
+
+button,
+a {
+  font-family: inherit;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+/* =========================================================
+   MAIN PAGE
+========================================================= */
+
+.team-page {
+  position: relative;
+  min-height: 100vh;
+  background:
+    radial-gradient(
+      circle at 50% 0%,
+      rgba(20, 90, 180, 0.18),
+      transparent 40%
+    ),
+    #030711;
+  overflow: hidden;
+}
+
+
+/* =========================================================
+   BINARY BACKGROUND
+========================================================= */
+
+.binary-background {
+  position: fixed;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.binary-bit {
+  position: absolute;
+  top: -40px;
+  color: rgba(80, 170, 255, 0.12);
+  font-family: monospace;
+  animation: binaryFall linear infinite;
+}
+
+@keyframes binaryFall {
+
+  from {
+    transform: translateY(-100px);
+  }
+
+  to {
+    transform: translateY(110vh);
+  }
+
+}
+
+
+/* =========================================================
+   AMBIENT LIGHT
+========================================================= */
+
+.ambient-glow {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(100px);
+  opacity: 0.25;
+}
+
+.glow-one {
+  width: 400px;
+  height: 400px;
+  background: #0066ff;
+  top: 10%;
+  left: -200px;
+}
+
+.glow-two {
+  width: 350px;
+  height: 350px;
+  background: #7b2cff;
+  top: 45%;
+  right: -150px;
+}
+
+.glow-three {
+  width: 300px;
+  height: 300px;
+  background: #00c6ff;
+  bottom: 5%;
+  left: 40%;
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.team-hero {
+  position: relative;
+  z-index: 2;
+
+  min-height: 70vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+  
+  padding: 120px 20px 80px;
+}
+
+.hero-small-label {
+  font-size: 50px;
+  font-family: sans-serif;
+  letter-spacing: 0.35em;
+  color: #e60f3e;
+  margin-bottom: 25px;
+}
+
+.team-hero h1 {
+  font-family: 'Times New Roman', Times, serif;
+
+  font-size: clamp(95px, 12vw, 200px);
+
+  line-height: 0.95;
+
+  letter-spacing: -0.04em;
+
+  font-weight: 600;
+
+  max-width: 1400px;
+}
+
+.team-hero h1 span {
+  display: block;
+
+  background: linear-gradient(
+    90deg,
+    #ffffff,
+    #69b9ff,
+    #a86bff
+  );
+
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.team-hero p {
+  max-width: 1000px;
+
+  margin-top: 45px;
+
+  color: gray;
+
+  font-size: 37px;
+
+  line-height: 1.8;
+}
+.hero-small-label {
+  font-family: monospace;                 
+  display: block;
+  overflow: hidden;                       
+  border-right: .15em solid #e60f3e;      
+  white-space: nowrap;                    
+  margin: 0 auto 25px; 
+  letter-spacing: 0.35em; 
+  
+  /* 1. Update the width to match the exact character length */
+  width: 23ch;                            /* Changed to 23ch to match text length */
+  
+  /* 2. Update the steps value to match the length of your text */
+  animation: 
+    typing 6s steps(23) infinite,          /* Changed to steps(23) */
+    blink-caret .75s step-end infinite;
+}
+
+/* 3. Update the keyframe percentages to stop precisely at 23 characters */
+@keyframes typing {
+  0%, 100% { width: 0; }
+  40%, 60% { width: 38ch; } /* Holds the full text block stable */
+  90% { width: 0; }         /* Safely wipes it clean */
+}
+
+/* The cursor blinking animation */
+@keyframes blink-caret {
+  from, to { border-color: transparent; }
+  50% { border-color: #e60f3e; }
+}
+/* =========================================================
+   GLASS CONTAINER
+========================================================= */
+
+.glass-container {
+
+  position: relative;
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(255,255,255,0.09),
+      rgba(255,255,255,0.025)
+    );
+
+  backdrop-filter: blur(25px);
+
+  border: 1px solid rgba(255,255,255,0.12);
+
+  clip-path: polygon(
+    0 0,
+    calc(100% - 35px) 0,
+    100% 35px,
+    100% 100%,
+    35px 100%,
+    0 calc(100% - 35px)
+  );
+
+  overflow: hidden;
+
+  box-shadow:
+    0 30px 80px rgba(0,0,0,0.4),
+    inset 0 1px rgba(255,255,255,0.08);
+}
+
+.glass-container::before {
+
+  content: "";
+
+  position: absolute;
+
+  width: 200%;
+
+  height: 200%;
+
+  left: -50%;
+  top: -50%;
+
+  background: conic-gradient(
+    transparent,
+    rgba(0,170,255,0.7),
+    transparent 25%,
+    rgba(170,60,255,0.7),
+    transparent 50%,
+    rgba(0,220,255,0.6),
+    transparent 75%
+  );
+
+  animation: rotateBorder 8s linear infinite;
+
+  z-index: -1;
+}
+
+@keyframes rotateBorder {
+
+  to {
+    transform: rotate(360deg);
+  }
+
+}
+
+.glass-content {
+  position: relative;
+
+  margin: 1px;
+
+  background: rgba(4, 10, 22, 0.82);
+
+  padding: 60px;
+}
+
+
+/* =========================================================
+   ORGANIZER
+========================================================= */
+
+.organizer-section {
+
+  position: relative;
+
+  z-index: 2;
+
+  max-width: 851px;
+   
+  margin: auto;
+
+  padding: 0 25px;
+}
+
+.organizer-container {
+  min-height: 700px;
+}
+
+.section-label {
+
+  position: absolute;
+
+  top: 30px;
+  left: 40px;
+
+  font-size: 50px;
+
+  letter-spacing: 0.25em;
+   font-weight: bold;
+  color: rgb(254, 251, 251);
+}
+
+.section-label span {
+
+  color: #58aaff;
+
+  margin-right: 15px;
+}
+
+.organizer-card-wrapper {
+
+  height: 870px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+}
+
+
+/* =========================================================
+   PERSON CARD
+========================================================= */
+
+.person-card {
+
+  width: 700px;
+  height: 790px;
+
+  perspective: 1200px;
+}
+
+.person-card-large {
+
+  width: 500px;
+  height: 600px;
+}
+
+.person-card-inner {
+
+  position: relative;
+
+  width: 100%;
+  height: 100%;
+
+  transition:
+    transform 0.8s
+    cubic-bezier(0.2,0.8,0.2,1);
+
+  transform-style: preserve-3d;
+}
+
+.person-card:hover .person-card-inner {
+
+  transform: rotateY(180deg);
+}
+
+.person-card-face {
+
+  position: absolute;
+
+  inset: 0;
+
+  backface-visibility: hidden;
+
+  overflow: hidden;
+
+  border: 1px solid rgba(255,255,255,0.15);
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(255,255,255,0.12),
+      rgba(255,255,255,0.025)
+    );
+
+  backdrop-filter: blur(25px);
+
+  box-shadow:
+    0 30px 80px rgba(0,0,0,0.45);
+}
+
+
+/* =========================================================
+   PERSON FRONT
+========================================================= */
+
+.person-card-front {
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: flex-end;
+}
+
+.person-image-wrapper {
+
+  position: absolute;
+
+  inset: 0;
+
+  overflow: hidden;
+}
+
+.person-image {
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  transition:
+    transform 0.8s ease;
+}
+
+.person-card:hover .person-image {
+
+  transform: scale(1.06);
+}
+
+.image-glow {
+
+  position: absolute;
+
+  inset: 0;
+
+  background:
+    linear-gradient(
+      transparent 30%,
+      rgba(0,0,0,0.9)
+    );
+}
+
+.person-front-info {
+
+  position: relative;
+
+  z-index: 2;
+
+  padding: 35px;
+}
+
+.person-front-info span {
+
+  font-size: 35px;
+  font-weight: bold;
+  letter-spacing: 0.2em;
+
+  color: #68b5ff;
+}
+
+.person-front-info h3 {
+
+  margin-top: 8px;
+
+  font-size: 49px;
+
+  font-family: "Space Grotesk";
+}
+
+
+
+/* =========================================================
+   PERSON BACK
+========================================================= */
+
+.person-card-back {
+
+  transform: rotateY(180deg);
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  padding: 60px;
+
+  background:
+    radial-gradient(
+      circle at 50% 20%,
+      rgba(0,140,255,0.18),
+      transparent 50%
+    ),
+    rgba(5,12,27,0.96);
+}
+
+.back-content {
+
+  text-align: center;
+}
+
+.back-role {
+
+  font-size: 60px;
+
+  letter-spacing: 0.2em;
+
+  color: #64b5ff;
+}
+
+.back-content h3 {
+
+  font-family: "Space Grotesk";
+
+  font-size: 70px;
+
+  margin: 12px 0 20px;
+}
+
+.back-content p {
+
+  color: rgba(255,255,255,0.6);
+
+  line-height: 1.7;
+
+  font-size: 30px;
+}
+
+
+/* =========================================================
+   SKILLS
+========================================================= */
+
+.skills {
+
+  display: flex;
+
+  flex-wrap: wrap;
+
+  justify-content: center;
+
+  gap: 7px;
+
+  margin-top: 25px;
+}
+
+.skills span {
+
+  padding: 7px 10px;
+
+  font-size: 20px;
+
+  border: 1px solid rgba(100,180,255,0.2);
+
+  background: rgba(50,130,255,0.08);
+
+  color: #8ecbff;
+}
+
+
+/* =========================================================
+   SOCIAL
+========================================================= */
+
+.social-links {
+
+  display: flex;
+
+  justify-content: center;
+
+  gap: 10px;
+
+  margin-top: 30px;
+}
+
+.social-links a {
+
+  width: 60px;
+  height: 60px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  border: 1px solid rgba(255,255,255,0.15);
+
+  background: rgba(255,255,255,0.04);
+
+  transition: 0.3s;
+}
+
+.social-links a:hover {
+
+  background: rgba(70,160,255,0.2);
+
+  transform: translateY(-3px);
+}
+
+
+/* =========================================================
+   LEADERSHIP
+========================================================= */
+
+.leadership-section,
+.departments-section {
+
+  position: relative;
+
+  z-index: 2;
+
+  max-width: 2400px;
+
+  margin: auto;
+
+  padding: 160px 25px 0;
+}
+
+
+
+.section-heading h2 {
+
+  margin-top: 30px;
+
+  font-family: monospace;
+   font-style: italic;
+   text-align: center;
+  font-size: clamp(42px, 6vw, 75px);
+
+  letter-spacing: -0.05em;
+
+  max-width: 1400px;
+}
+
+.section-heading h2 em {
+
+  font-style: normal;
+
+  color: rgba(255,255,255,0.3);
+}
+
+.section-heading > p {
+
+  max-width: 650px;
+
+  margin-top: 25px;
+
+  color: rgba(255,255,255,0.5);
+
+  line-height: 1.7;
+}
+
+.leadership-grid {
+
+  margin-top: 80px;
+
+  display: flex;
+
+  justify-content: center;
+
+  gap: 70px;
+
+  flex-wrap: wrap;
+}
+
+/* =========================================================
+   DEPARTMENT CARDS
+========================================================= */
+
+.department-grid {
+  width: min(4000px, 100%);
+  margin: 70px auto 0;
+
+  display: grid;
+
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+
+  gap: 40px;
+
+  align-items: stretch;
+}
+
+
+/* =========================================================
+   CARD
+========================================================= */
+
+.department-card {
+  position: relative;
+
+  min-height: 900px;
+  min-width: 0px;
+  margin:0px;
+  padding: 10px;
+
+  overflow: hidden;
+
+  isolation: isolate;
+
+  background: transparent;
+
+  /* Two sharp + two angled corners */
+  clip-path: polygon(
+    0 0,
+    calc(100% - 42px) 0,
+    100% 42px,
+    100% 100%,
+    42px 100%,
+    0 calc(100% - 42px)
+  );
+}
+
+
+/* =========================================================
+   ANIMATED MULTICOLOR BORDER
+========================================================= */
+
+.department-card-border {
+  position: absolute;
+
+  inset: -100%;
+
+  z-index: -2;
+
+  background:
+    conic-gradient(
+      from 0deg,
+
+      #00b7ff,
+      #0066ff,
+      #13eb45,
+      #eb3a09,
+      #481397,
+      #ade210,
+      #e70fb1
+    );
+
+  animation:
+    departmentBorderRotate
+    4s linear infinite;
+}
+
+
+@keyframes departmentBorderRotate {
+
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+
+}
+
+
+/* =========================================================
+   GLASS INTERIOR
+========================================================= */
+
+.department-card-inner {
+
+  position: relative;
+
+  width: 100%;
+  height: 100%;
+
+  min-height: 888px;
+  
+
+  overflow: hidden;
+
+  padding: 34px;
+
+  display: flex;
+  flex-direction: column;
+
+  justify-content: flex-end;
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(15, 27, 52, 0.92),
+      rgba(4, 10, 24, 0.96)
+    );
+
+  backdrop-filter: blur(18px);
+
+  -webkit-backdrop-filter: blur(18px);
+
+  clip-path: polygon(
+    0 0,
+    calc(100% - 42px) 0,
+    100% 42px,
+    100% 100%,
+    42px 100%,
+    0 calc(100% - 42px)
+  );
+
+  transition:
+    transform 0.5s ease,
+    box-shadow 0.5s ease;
+}
+
+
+/* =========================================================
+   CARD HOVER
+========================================================= */
+
+.department-card:hover .department-card-inner {
+
+  transform: translateY(-5px);
+
+  box-shadow:
+    0 25px 70px rgba(0, 0, 0, 0.45);
+}
+
+
+/* =========================================================
+   AMBIENT GLOW
+========================================================= */
+
+.department-card-glow {
+
+  position: absolute;
+
+  width: 510px;
+  height: 260px;
+
+  top: -110px;
+  right: -80px;
+
+  border-radius: 50%;
+
+  filter: blur(60px);
+
+  opacity: 0.22;
+
+  pointer-events: none;
+
+  transition:
+    opacity 0.5s ease,
+    transform 0.6s ease;
+}
+
+
+.department-card:hover
+.department-card-glow {
+
+  opacity: 0.38;
+
+  transform: scale(1.2);
+}
+
+
+/* =========================================================
+   LEAD IMAGE
+========================================================= */
+
+.department-lead-image {
+
+  position: absolute;
+
+  top: 8px;
+  right: 8px;
+
+  width: 740px;
+  height: 866px;
+
+  overflow: hidden;
+
+  border: 1px solid rgba(255,255,255,0.16);
+
+  background: rgba(0,0,0,0.25);
+
+  clip-path: polygon(
+    0 0,
+    calc(100% - 18px) 0,
+    100% 18px,
+    100% 100%,
+    18px 100%,
+    0 calc(100% - 18px)
+  );
+
+  box-shadow:
+    0 20px 45px rgba(0,0,0,0.35);
+
+  z-index: 2;
+}
+
+
+.department-lead-image img {
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  transition:
+    transform 0.7s cubic-bezier(
+      0.2,
+      0.8,
+      0.2,
+      1
+    );
+}
+
+
+.department-card:hover
+.department-lead-image img {
+
+  transform: scale(1.08);
+}
+
+
+/* =========================================================
+   CONTENT
+========================================================= */
+
+.department-content {
+
+  position: relative;
+
+  z-index: 3;
+
+  width: 65%;
+
+  margin-top: auto;
+
+  padding-top: 110px;
+}
+
+
+
+
+
+.department-content h3 {
+
+  margin: 0;
+
+  font-family:
+    "Space Grotesk",
+    sans-serif;
+
+  font-size: 55px;
+  font-style: italic;
+
+  line-height: 1.05;
+
+  letter-spacing: -0.02em;
+
+  color: #94A3B8;
+}
+
+
+.department-content p {
+
+  margin-top: 14px;
+
+  max-width: 440px;
+
+  font-size: 26px;
+
+  line-height: 1.7;
+
+  color:#10B981;
+}
+
+
+/* =========================================================
+   LEAD INFORMATION
+========================================================= */
+
+.department-lead-info {
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 4px;
+
+  margin-top: 20px;
+}
+
+
+
+
+
+.department-lead-info strong {
+
+  font-family:
+    "Space Grotesk",
+    sans-serif;
+
+  font-size: 40px;
+
+  font-weight: 600;
+
+  color: #38BDF8;
+}
+
+
+/* =========================================================
+   MEET TEAM BUTTON
+========================================================= */
+
+.meet-team-button {
+
+  position: absolute;
+
+  right: 26px;
+  bottom: 24px;
+
+  z-index: 5;
+
+  height: 64px;
+
+  padding: 4px 4px 4px 18px;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+  border: 1px solid rgba(255,255,255,0.14);
+
+  border-radius: 999px;
+
+  background:
+    rgba(255,255,255,0.06);
+
+  backdrop-filter: blur(10px);
+
+  -webkit-backdrop-filter: blur(10px);
+
+  color: rgba(240, 13, 13, 0.82);
+
+  font-family:
+    "Space Grotesk",
+    sans-serif;
+
+  font-size: 30px;
+
+  font-weight: 600;
+
+  letter-spacing: 0.12em;
+
+  cursor: pointer;
+
+  transition:
+    background 0.35s ease,
+    border-color 0.35s ease,
+    transform 0.35s ease;
+}
+
+
+.meet-team-arrow {
+
+  width: 44px;
+  height: 44px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: rgba(255,255,255,0.10);
+
+  transition:
+    transform 0.35s ease,
+    background 0.35s ease;
+}
+
+
+.meet-team-button:hover {
+
+  transform: translateY(-2px);
+
+  background:
+    rgba(255,255,255,0.10);
+
+  border-color:
+    rgba(255,255,255,0.28);
+}
+
+
+.meet-team-button:hover
+.meet-team-arrow {
+
+  transform: rotate(45deg);
+
+  background:
+    rgba(255,255,255,0.18);
+}
+
+
+/* =========================================================
+   DIFFERENT DEPARTMENT COLOR COMBINATIONS
+========================================================= */
+
+
+/* TECHNICAL */
+
+.department-blue
+.department-card-glow {
+
+  background:
+    radial-gradient(
+      circle,
+      #008cff,
+      transparent 70%
+    );
+}
+
+
+.department-blue
+.department-card-border {
+
+  background:
+    conic-gradient(
+      from 0deg,
+      #00c6ff,
+      #0072ff,
+      #304ffe,
+      #00e5ff,
+      #00b7ff,
+      #0072ff,
+      #00c6ff
+    );
+}
+
+
+/* SOCIAL MEDIA */
+
+.department-cyan
+.department-card-glow {
+
+  background:
+    radial-gradient(
+      circle,
+      #00e5ff,
+      transparent 70%
+    );
+}
+
+
+.department-cyan
+.department-card-border {
+
+  background:
+    conic-gradient(
+      from 0deg,
+      #00f5ff,
+      #00b8ff,
+      #00ffcc,
+      #00e5ff,
+      #3b82f6,
+      #00f5ff
+    );
+}
+
+
+/* EVENT */
+
+.department-purple
+.department-card-glow {
+
+  background:
+    radial-gradient(
+      circle,
+      #a855f7,
+      transparent 70%
+    );
+}
+
+
+.department-purple
+.department-card-border {
+
+  background:
+    conic-gradient(
+      from 0deg,
+      #7c3aed,
+      #d946ef,
+      #6366f1,
+      #ec4899,
+      #8b5cf6,
+      #7c3aed
+    );
+}
+
+
+/* R&D */
+
+.department-green
+.department-card-glow {
+
+  background:
+    radial-gradient(
+      circle,
+      #00ffb3,
+      transparent 70%
+    );
+}
+
+
+.department-green
+.department-card-border {
+
+  background:
+    conic-gradient(
+      from 0deg,
+      #00ffb3,
+      #00e676,
+      #00c9a7,
+      #00e5ff,
+      #22c55e,
+      #00ffb3
+    );
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 900px) {
+
+  .department-grid {
+
+    grid-template-columns: 1fr;
+
+    width: min(600px, 92%);
+  }
+
+}
+
+
+@media (max-width: 600px) {
+
+  .department-card {
+
+    min-height: 360px;
+  }
+
+  .department-card-inner {
+
+    min-height: 358px;
+
+    padding: 25px;
+  }
+
+  .department-lead-image {
+
+    width: 110px;
+    height: 135px;
+
+    top: 22px;
+    right: 22px;
+  }
+
+  .department-content {
+
+    width: 100%;
+
+    padding-top: 100px;
+  }
+
+  .department-content h3 {
+
+    font-size: 24px;
+  }
+
+}
+
+/* =========================================================
+   ENDING
+========================================================= */
+
+.team-ending {
+
+  position: relative;
+
+  z-index: 2;
+
+  max-width: 900px;
+
+  margin: 180px auto;
+
+  padding: 0 25px;
+
+  text-align: center;
+}
+
+.team-ending .glass-content {
+
+  padding: 100px 40px;
+}
+
+.team-ending span {
+
+  font-size: 10px;
+
+  letter-spacing: 0.3em;
+
+  color: #65b7ff;
+}
+
+.team-ending h2 {
+
+  font-family: "Space Grotesk";
+
+  font-size: clamp(40px, 6vw, 70px);
+
+  line-height: 1;
+
+  margin-top: 25px;
+
+  letter-spacing: -0.05em;
+}
+
+.team-ending p {
+
+  margin-top: 25px;
+
+  color: rgba(255,255,255,0.45);
+}
+
+
+/* =========================================================
+   DEPARTMENT PAGE
+========================================================= */
+
+.department-page {
+
+  min-height: 100vh;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  background:
+    radial-gradient(
+      circle,
+      rgba(0,100,255,0.15),
+      transparent 50%
+    ),
+    #030711;
+}
+
+.department-page-content {
+
+  text-align: center;
+}
+
+.department-page-content span {
+
+  color: #62b5ff;
+
+  letter-spacing: 0.2em;
+
+  font-size: 11px;
+}
+
+.department-page-content h1 {
+
+  margin-top: 20px;
+
+  font-family: "Space Grotesk";
+
+  font-size: clamp(50px, 8vw, 100px);
+
+  text-transform: uppercase;
+}
+
+.department-page-content p {
+
+  margin-top: 20px;
+
+  color: rgba(255,255,255,0.5);
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 800px) {
+
+  .glass-content {
+    padding: 35px 20px;
+  }
+
+  .organizer-container {
+    min-height: 580px;
+  }
+
+  .organizer-card-wrapper {
+    height: 500px;
+  }
+
+  .person-card {
+    width: 300px;
+    height: 430px;
+  }
+
+  .department-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .department-content {
+    padding: 35px;
+  }
+
+  .meet-team-button {
+    left: 35px;
+    right: 35px;
+  }
+
+  .leadership-grid {
+    gap: 40px;
+  }
+
+}
+
+@media (max-width: 500px) {
+
+  .team-hero {
+    min-height: 60vh;
+  }
+
+  .team-hero h1 {
+    font-size: 55px;
+  }
+
+  .person-card {
+    width: 270px;
+    height: 400px;
+  }
+
+  .person-card-large {
+    width: 280px;
+  }
+
+  .department-card {
+    min-height: 530px;
+  }
+
+  .department-content {
+    min-height: 530px;
+    padding: 28px;
+  }
+
+  .meet-team-button {
+    left: 28px;
+    right: 28px;
+  }
+
+}

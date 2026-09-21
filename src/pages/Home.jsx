@@ -9,7 +9,7 @@ import AchievementCard from "../components/achievements/AchievementCard";
 import { projects } from "../data/projects";
 import events from "../data/events";
 import { achievements } from "../data/achievements";
-import team from "../data/team";
+import team from "../data/teamData";
 
 function Stat({ Icon, value, label }) {
   return <div className="home-stat"><Icon size={19}/><strong>{value}</strong><span>{label}</span></div>;

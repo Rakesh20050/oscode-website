@@ -11,7 +11,7 @@ import {
 
 import EventShuffleCarousel from "./EventShuffleCarousel";
 
-import team from "../../data/team";
+import team from "../../data/teamData";
 import event from "../../data/events";
 import { projects } from "../../data/projects";
 
