@@ -1,6 +1,7 @@
 import { Component, Suspense, lazy } from "react";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import RootLayout from "./components/layout/RootLayout";
+import TeamDepartmentCard from "./components/TeamDepartmentCard";
 
 const Home = lazy(() => import("./pages/Home"));
 const ProjectsPage = lazy(() => import("./pages/ProjectsPage"));
@@ -11,6 +12,7 @@ const Team = lazy(() => import("./pages/Team"));
 const LearningPage = lazy(() => import("./pages/LearningPage"));
 const Contact = lazy(() => import("./pages/Contact"));
 const NotFound = lazy(() => import("./pages/NotFound"));
+const DepartmentPage =lazy(()=> import("./pages/DepartmentPage"));
 
 function PageLoader() {
   return (
@@ -80,6 +82,7 @@ const router = createBrowserRouter([
       { path: "events", element: <LazyPage Component={Events} /> },
       { path: "team", element: <LazyPage Component={Team} /> },
       { path: "learning", element: <LazyPage Component={LearningPage} /> },
+      { path: "team/:department", element: <LazyPage Component={DepartmentPage}/>},
       { path: "contact", element: <LazyPage Component={Contact} /> },
       { path: "*", element: <LazyPage Component={NotFound} /> },
     ],

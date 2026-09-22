@@ -4,6 +4,8 @@ import GlassContainer from "../components/GlassContainer";
 import PersonFlipCard from "../components/PersonFlipCard";
 import TeamDepartmentCard from "../components/TeamDepartmentCard";
 
+
+
 import {
   organizer,
   leadership,

@@ -275,7 +275,7 @@ export default function DepartmentPage() {
 
           {currentDepartment.members.map(
             (
-             
+             member,index
             ) => (
 
               <article
