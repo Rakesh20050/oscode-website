@@ -32,7 +32,7 @@ export interface Department {
 
 export const organizer: Person = {
   name: "Bharat Kumar S",
-  role: "Club Head",
+  role: "Club Coordinator",
   image: "/images/team/organizer.jpeg",
   backgroundImage: "/images/team/backgrounds/organizer-bg.jpg",
 
@@ -72,8 +72,8 @@ export const leadership: Person[] = [
       "Community",
     ],
 
-    github: "https://github.com/",
-    linkedin: "https://www.linkedin.com/",
+    github: "https://github.com/riddzzz849",
+    linkedin: "https://www.linkedin.com/in/riddhima-utreja-898260334",
   },
 
   {
@@ -94,7 +94,7 @@ export const leadership: Person[] = [
     ],
 
     github: "https://github.com/",
-    linkedin: "https://www.linkedin.com/",
+    linkedin: "https://www.linkedin.com/in/bindhu-rekha-597b16376",
   },
 ];
 
@@ -137,8 +137,8 @@ export const departments: Department[] = [
         "Projects",
       ],
 
-      github: "https://github.com/",
-      linkedin: "https://www.linkedin.com/",
+      github: "https://github.com/durgaprajapati083",
+      linkedin: "https://www.linkedin.com/in/durga-prajapati-0692b1247",
     },
 
     /* -----------------------------
@@ -151,8 +151,8 @@ export const departments: Department[] = [
         role: "Developer",
         image:
           "/images/team/members/technical-1.jpeg",
-        github: "https://github.com/your-username",
-  linkedin: "https://linkedin.com/in/your-username",
+        github: "https://github.com/Rakesh20050",
+  linkedin: "https://www.linkedin.com/in/rakesh-kumar-shah",
       },
 
       {
@@ -195,145 +195,6 @@ export const departments: Department[] = [
     ],
   },
 
-  /* =======================================================
-     R&D TEAM
-  ======================================================= */
-
-  
-
-  /* =======================================================
-     SOCIAL MEDIA TEAM
-  ======================================================= */
-
-  {
-    name: "SOCIAL MEDIA TEAM",
-    shortName: "Social",
-
-    accent: "cyan",
-
-    description:
-      "Connects OSCODE CIT with the community through creative digital communication and media.",
-
-    /* -----------------------------
-       SOCIAL MEDIA LEAD
-    ----------------------------- */
-
-    lead: {
-      name: "K Lipika Shree",
-      role: "Social Media Lead",
-      image:
-        "/images/team/social-media-lead.jpeg",
-      backgroundImage:
-        "/images/team/backgrounds/social-media-bg.jpg",
-
-      description:
-        "Leads the social media team in creating engaging content, managing digital communication, and showcasing OSCODE CIT activities.",
-
-      skills: [
-        "Content Creation",
-        "Social Media",
-        "Design",
-        "Communication",
-      ],
-
-      github: "https://github.com/",
-      linkedin: "https://www.linkedin.com/",
-    },
-
-    /* -----------------------------
-       SOCIAL MEDIA MEMBERS
-    ----------------------------- */
-
-    members: [
-      {
-        name: "Social Media Member 1",
-        role: "Content Creator",
-        image:
-          "/images/team/members/social-1.jpg",
-      },
-
-      {
-        name: "Social Media Member 2",
-        role: "Designer",
-        image:
-          "/images/team/members/social-2.jpg",
-      },
-
-      {
-        name: "Social Media Member 3",
-        role: "Media Member",
-        image:
-          "/images/team/members/social-3.jpg",
-      },
-    ],
-  },
-
-  /* =======================================================
-     EVENT TEAM
-  ======================================================= */
-
-  {
-    name: "EVENT TEAM",
-    shortName: "Events",
-
-    accent: "purple",
-
-    description:
-      "Plans and executes workshops, hackathons, meetups, technical sessions, and community activities.",
-
-    /* -----------------------------
-       EVENT LEAD
-    ----------------------------- */
-
-    lead: {
-      name: "Aishwarya Gadela",
-      role: "Event Lead",
-      image:
-        "/images/team/event-lead.jpg",
-      backgroundImage:
-        "/images/team/backgrounds/event-bg.jpg",
-
-      description:
-        "Coordinates events and activities that bring students together to learn, collaborate, compete, and build.",
-
-      skills: [
-        "Event Management",
-        "Coordination",
-        "Communication",
-        "Planning",
-      ],
-
-      github: "https://github.com/",
-      linkedin: "https://www.linkedin.com/",
-    },
-
-    /* -----------------------------
-       EVENT TEAM MEMBERS
-    ----------------------------- */
-
-    members: [
-      {
-        name: "Event Member 1",
-        role: "Event Coordinator",
-        image:
-          "/images/team/members/event-1.jpg",
-      },
-
-      {
-        name: "Event Member 2",
-        role: "Coordinator",
-        image:
-          "/images/team/members/event-2.jpg",
-      },
-
-      {
-        name: "Event Member 3",
-        role: "Volunteer",
-        image:
-          "/images/team/members/event-3.jpg",
-      },
-    ],
-  },
    /* =======================================================
      R&D TEAM
   ======================================================= */
@@ -368,8 +229,8 @@ export const departments: Department[] = [
         "Experimentation",
       ],
 
-      github: "https://github.com/",
-      linkedin: "https://www.linkedin.com/",
+      github: "https://share.google/iHpqp3PHbcrfvGtsr",
+      linkedin: "https://www.linkedin.com/in/s-nishaanth",
     },
 
     /* -----------------------------
@@ -382,23 +243,21 @@ export const departments: Department[] = [
     members: [
       {
         name: "Punith S",
-        role: "R&D Member",
+        role: "R&D Lead",
         image:
           "/images/team/rnd1-lead.jpg",
-        github: "https://github.com/",
-        linkedin: "https://www.linkedin.com/",
       },
 
       {
-        name: "R&D Member 2",
-        role: "Researcher",
+        name: "Gnanesh M V",
+        role: "R&D Member",
         image:
           "/images/team/members/rd-2.jpg",
       },
 
       {
-        name: "R&D Member 3",
-        role: "AI/ML Member",
+        name: "Roshan Zameer Y A",
+        role: "R&D  Member",
         image:
           "/images/team/members/rd-3.jpg",
       },
@@ -438,8 +297,8 @@ export const departments: Department[] = [
         "Experimentation",
       ],
 
-      github: "https://github.com/",
-      linkedin: "https://www.linkedin.com/",
+      github: "https://github.com/punithsuresh18",
+      linkedin: "https://www.linkedin.com/in/punith-s-630339392",
     },
 
     /* -----------------------------
@@ -455,8 +314,6 @@ export const departments: Department[] = [
         role: "R&D Member",
         image:
           "/images/team/rnd1-lead.jpg",
-        github: "https://github.com/",
-        linkedin: "https://www.linkedin.com/",
       },
 
       {
@@ -471,6 +328,138 @@ export const departments: Department[] = [
         role: "AI/ML Member",
         image:
           "/images/team/members/rd-3.jpg",
+      },
+    ],
+  },
+  /* =======================================================
+     EVENT TEAM
+  ======================================================= */
+
+  {
+    name: "EVENT TEAM",
+    shortName: "Events",
+
+    accent: "purple",
+
+    description:
+      "Plans and executes workshops, hackathons, meetups, technical sessions, and community activities.",
+
+    /* -----------------------------
+       EVENT LEAD
+    ----------------------------- */
+
+    lead: {
+      name: "Aishwarya Gadela",
+      role: "Event Lead",
+      image:
+        "/images/team/event-lead.jpg",
+      backgroundImage:
+        "/images/team/backgrounds/event-bg.jpg",
+
+      description:
+        "Coordinates events and activities that bring students together to learn, collaborate, compete, and build.",
+
+      skills: [
+        "Event Management",
+        "Coordination",
+        "Communication",
+        "Planning",
+      ],
+
+      github: "https://github.com/AishwaryaGadela",
+      linkedin: "https://www.linkedin.com/in/aishwarya-gadela-4772b2261",
+    },
+
+    /* -----------------------------
+       EVENT TEAM MEMBERS
+    ----------------------------- */
+
+    members: [
+      {
+        name: "Event Member 1",
+        role: "Event Coordinator",
+        image:
+          "/images/team/members/event-1.jpg",
+      },
+
+      {
+        name: "Event Member 2",
+        role: "Coordinator",
+        image:
+          "/images/team/members/event-2.jpg",
+      },
+
+      {
+        name: "Event Member 3",
+        role: "Volunteer",
+        image:
+          "/images/team/members/event-3.jpg",
+      },
+    ],
+  },
+  /* =======================================================
+     SOCIAL MEDIA TEAM
+  ======================================================= */
+
+  {
+    name: "SOCIAL MEDIA TEAM",
+    shortName: "Social",
+
+    accent: "cyan",
+
+    description:
+      "Connects OSCODE CIT with the community through creative digital communication and media.",
+
+    /* -----------------------------
+       SOCIAL MEDIA LEAD
+    ----------------------------- */
+
+    lead: {
+      name: "K Lipika Shree",
+      role: "Social Media Lead",
+      image:
+        "/images/team/social-media-lead.jpeg",
+      backgroundImage:
+        "/images/team/backgrounds/social-media-bg.jpg",
+
+      description:
+        "Leads the social media team in creating engaging content, managing digital communication, and showcasing OSCODE CIT activities.",
+
+      skills: [
+        "Content Creation",
+        "Social Media",
+        "Design",
+        "Communication",
+      ],
+
+      github: "https://github.com/lipikashree28-hue",
+      linkedin: "https://www.linkedin.com/in/lipika-shree-98009b386",
+    },
+
+    /* -----------------------------
+       SOCIAL MEDIA MEMBERS
+    ----------------------------- */
+
+    members: [
+      {
+        name: "Saurab Yadav",
+        role: "Media Member",
+        image:
+          "/images/team/members/social-1.jpg",
+      },
+
+      {
+        name: "Siddarth MD",
+        role: "Media Member",
+        image:
+          "/images/team/members/social-2.jpg",
+      },
+
+      {
+        name: "Anubhab Ray",
+        role: "Media Member",
+        image:
+          "/images/team/members/social-3.jpg",
       },
     ],
   },

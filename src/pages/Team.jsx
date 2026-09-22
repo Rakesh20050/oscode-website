@@ -57,7 +57,7 @@ export default function TeamPage() {
         <GlassContainer className="organizer-container">
 
           <div className="section-label">
-            Club Head
+            Club Coordinator
           </div>
 
           <div className="organizer-card-wrapper">
